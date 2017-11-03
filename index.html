@@ -18,23 +18,60 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
+        
+        
+        
+        
+        
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
         
         
         
         
 <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
+<ul id="dropdown1"  class="dropdown-content" >
+  <li><a href="#Imp" class="logotext">HTML and CSS</a></li>
     <li class="divider"></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
+  <li><a href="#Box" class="logotext">CSS box model</a></li>
+  <li class="divider" class="logotext"></li>
+  <li><a href="#JS" class="logotext">Javascript</a></li>
+    <li class="divider"></li>
+  <li><a href="#pc" class="logotext">CSS compared</a></li>
+    <li class="divider"></li>
+  <li><a href="#Browser" class="logotext">Browser Support</a></li>
 </ul>
+       
 <nav>
     
     <!-- Navigation Bar -->
-  <div class="nav-wrapper logoblue navbar-fixed-top">
+  <div class="nav-wrapper logoblue">
       <a href="#!" class="brand-logo center"> <img style="max-width:100px; margin-top: -18px;" src="Assets/navLogo.png"/> </a>
     <ul class="left">
         
@@ -45,12 +82,26 @@
     </ul>
   </div>
     </nav>
-       
-  <!-- Header image-->
-  <img class="responsive-img" src="Assets/background.jpg" width="100%" height="50%"> 
         
-         <!--CSS IMPLEMENTATION METODS-->
-        <div> <h3 style="margin-right:80px; margin-left:80px;">HTML And CSS</h3> </div>
+        <!-- Header Text -->
+        <header style="float: left; position: relative; width: 100%; height: 10%; overflow: hidden;">
+            <p style="color: aliceblue; width: 100%; height: 10%; margin-top: 10%; font-size: 99px;"  class="center header-text">Fundamentals To Building A Webpage<br>In HTML5</p>
+            
+            
+  <!-- Header image-->
+  <img class="responsive-img"  src="Assets/background.jpg" width="100%" height="auto"> 
+        </header>
+        
+        <!--Animation Implementation -->
+        <div class="fadeInUp">
+        
+        <!--CSS IMPLEMENTATION METODS-->
+       <section id="Imp">  
+        <div style="background-color: margin-top: 30px;">
+
+            <div style="animation-name:fadeInUp">  
+                
+                <h2 class="center"><u>HTML And CSS</u></h2> </div>
         
         <div class="center" style="overflow: hidden;"> 
             
@@ -61,17 +112,127 @@
            <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> There are three methods to implementing CSS into your webpage. The three methods are inline, internal and external. As you can seefrom the poster on the left, each type of implementation has their  pros and cons and it is important to know when to use each method. Inline is when you want to style an individual elemenet. Internal is where all the CSS code is implemented in the same document as the HTML code. Lastly, external is where the HTML document will link itself to an external document that will contain  all of the CSS code. If you're wondered as to which method you  should use, I present the pros and cons of each implementation method further down this page.
             </p>
             <!--Button/Link-->
-               <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank" class="waves-effect waves-light btn">Learn More!</a> </div>
+               <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank" style="background-color: firebrick;"  class="waves-effect waves-light btn">Learn More!</a> </div>
         
             
         </div>
+        </div>
+        </section>
         <hr>
-                <div></div>
-       
+        
+        
+        <!--CSS Box Model -->
+                  <section id="Box">  
+        <div style="background-color: margin-top: 25px;">
 
+          <h2 class="center"><u>CSS Box Model</u></h2>
+        
+        <div class="center" style="overflow: hidden;"> 
+            
+           <!--Poster-->
+             <div style="margin: 20px;"> <img style="float: right;" class="responsive-img"  src="Assets/placeholderyellow.png"/> </div>  
+            
+            <!--Text-->
+           <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcutibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcu
+            </p>
+            <!--Button/Link-->
+               <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" style="background-color: firebrick;" class="waves-effect waves-light btn">Learn More!</a> </div>
+        </div>
+        </div>
+        </section>
+        <hr>
+        
+        
+        <!-- JS Fundamentals -->
+          <section id="JS">  
+        <div style="background-color: margin-top: 25px;">
+
+          <h2 class="center"><u>Javascript Fundamentals</u></h2>
+        
+        <div class="center" style="overflow: hidden;"> 
+            
+           <!--Poster-->
+             <div style="margin: 20px;"> <img style="float: left;" class="responsive-img"  src="Assets/placeholderyellow.png"/> </div>  
+            
+            <!--Text-->
+           <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcutibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcu
+            </p>
+            <!--Button/Link-->
+               <a href="https://www.w3schools.com/js/" target="_blank" style="background-color: firebrick;" class="waves-effect waves-light btn">Learn More!</a> </div></div>
+        </div>
+        </section>
+        <hr>
+        
+        <!--Comparison-->
+       <section id="pc"> <h2 class="center" ><u> CSS Implementation Methods Comparison</u></h2>
+        <p class="center" style="font-size: 16px;">Below, I will lay out the pros and cons of each <br> implementation method as well as <br> when each one should be used</p>
+        <div style="margin-left: 20px; font-size: 20px;">
+            
+        <p><b>Inline Advantages:</b> 
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+        <p><b>Inline Disadvantages:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+        <p><b>Internal Advantages:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+        
+        <p><b>Internal Disadvantages:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+             
+            
+        <p><b>External Advantages:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+            
+        <p><b>External Disadvantages:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+            
+        <p><b>Conclusion:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non velit nunc. Praesent tincidunt varius massa, eget vulputate magna pulvinar a. Quisque dui elit, iaculis vitae faucibus in, elementum id risus. Nulla id dolor sollicitudin, laoreet ante sed, faucibus risus. In sagittis viverra leo quis tincidunt. Aenean blandit metus vel dapibus tincidunt. Nulla nec ligula porta, rutrum ipsum sit amet, placerat magna. Fusce molestie eu lorem at tristique. Etiam in metus dapibus, gravida tortor ut, elementum sem. Morbi viverra sed ante laoreet faucibus. Cras augue orci, congue sed mollis aliquet, finibus eget augue. Nunc id luctus mi. Sed eget neque nec tortor sollicitudin ullamcorper maximus vel purus.
+            </p>
+        
+        
+           </div> </section>
+        
+        <hr>
+        
+        <!-- Browser Support-->
+    <section id="Browser">  <h2 class="center" ><u>Browser Support and Accessiblity</u></h2>
+        <br>
+       <div style="width: 100%; text-align: center;">
+    <img class="responsive-img"  src="Assets/test.png"/>
+    <br>
+</div>
+    <div style="margin-left: 20px; font-size: 22px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci
+        </p></div>
+        <div class="center"> <a href="https://www.w3schools.com/cssref/css3_browsersupport.asp" target="_blank" style="background-color: firebrick;"  class="waves-effect waves-light btn">Learn More!</a> </div>
+        <br>
+        <br>
+        <br>
+        
         
         
 
-        
+        </section>
+        </div>
+        <!-- Footer -->
+           <footer  class="logoblue" style=" width: 100%;
+            bottom: 0;
+            position: fixed;
+            height: 4.5% ">
+               <div style="margin-left: 20px;"> s </div>
+        </footer>
+        <!-- Footer End -->
     </body>
-  </html>
+</html>

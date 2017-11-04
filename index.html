@@ -8,9 +8,15 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Import -->
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+</style>
+        
     </head>
 
-    <body bgcolor="#f8f8f8">
+    <body bgcolor="#f8f8f8" class="osc">
         
    
         
@@ -56,7 +62,8 @@ $(document).ready(function(){
         
         
 <!-- Dropdown Structure -->
-<ul id="dropdown1"  class="dropdown-content" >
+<ul id="dropdown1"  class="dropdown-content">
+    <b>
   <li><a href="#Imp" class="logotext">HTML and CSS</a></li>
     <li class="divider"></li>
   <li><a href="#Box" class="logotext">CSS box model</a></li>
@@ -66,6 +73,7 @@ $(document).ready(function(){
   <li><a href="#pc" class="logotext">CSS compared</a></li>
     <li class="divider"></li>
   <li><a href="#Browser" class="logotext">Browser Support</a></li>
+    </b>
 </ul>
        
 <nav>
@@ -85,7 +93,8 @@ $(document).ready(function(){
         
         <!-- Header Text -->
         <header style="float: left; position: relative; width: 100%; height: 10%; overflow: hidden;">
-            <p style="color: aliceblue; width: 100%; height: 10%; margin-top: 10%; font-size: 99px;"  class="center header-text">Fundamentals To Building A Webpage<br>In HTML5</p>
+            
+            <p style="color: aliceblue; width: 100%; height: 10%; margin-top: 10%; font-size: 99px; font-size: 5vw;"  class="center header-text"><b>Fundamentals To Building A Webpage<br>In HTML5</b></p>
             
             
   <!-- Header image-->
@@ -101,7 +110,7 @@ $(document).ready(function(){
 
             <div style="animation-name:fadeInUp">  
                 
-                <h2 class="center"><u>HTML And CSS</u></h2> </div>
+                <h2 class="center"><u><b>HTML And CSS</b></u></h2> </div>
         
         <div class="center" style="overflow: hidden;"> 
             
@@ -109,10 +118,10 @@ $(document).ready(function(){
              <div style="margin: 20px;"> <img style="float: left;" class="responsive-img"  src="Assets/Poster1.jpg"/> </div>  
             
             <!--Text-->
-           <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> There are three methods to implementing CSS into your webpage. The three methods are inline, internal and external. As you can seefrom the poster on the left, each type of implementation has their  pros and cons and it is important to know when to use each method. Inline is when you want to style an individual elemenet. Internal is where all the CSS code is implemented in the same document as the HTML code. Lastly, external is where the HTML document will link itself to an external document that will contain  all of the CSS code. If you're wondered as to which method you  should use, I present the pros and cons of each implementation method further down this page.
+           <div> <p style="vertical-align: top;  font-size: 23px;"> <br> <br> <br> There are three methods to implementing CSS into a webpage. The three methods are inline, internal and external. As you can see from the poster on, each type of implementation has their pros and cons and it is important to know when to use each method. Inline is when you want to sstyle an individual element. Internal is where all the CSS code is implemented in the same document as the HTML code. Lastly, external is where the HTML document will link itself to an external document that will contain all of the CSS code, if you;re wondering as to which method you should use, I present the pros and cons of each method further down this page.
             </p>
             <!--Button/Link-->
-               <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank" style="background-color: firebrick;"  class="waves-effect waves-light btn">Learn More!</a> </div>
+               <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank" style="background-color: firebrick;"  class="waves-effect waves-light btn"><b>Learn More!</b></a> </div>
         
             
         </div>
@@ -125,18 +134,17 @@ $(document).ready(function(){
                   <section id="Box">  
         <div style="background-color: margin-top: 25px;">
 
-          <h2 class="center"><u>CSS Box Model</u></h2>
+            <h2 class="center"><u><b>CSS Box Model</b></u></h2>
         
         <div class="center" style="overflow: hidden;"> 
             
            <!--Poster-->
-             <div style="margin: 20px;"> <img style="float: right;" class="responsive-img"  src="Assets/placeholderyellow.png"/> </div>  
+             <div style="margin: 20px;"> <img style="float: right;" class="responsive-img"  src="Assets/poster2.jpg"/> </div>  
             
             <!--Text-->
-           <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcutibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcu
-            </p>
+            <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> The box model determines how elements on a webpage are spaced out from each other. There are four parts to the box model. Margin, border, padding and content. The poster explains these four parts as well as shows a diagram and example of what the box model looks like. It is important to understand the box model when using CSS as it can make or break the layout. </p>
             <!--Button/Link-->
-               <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" style="background-color: firebrick;" class="waves-effect waves-light btn">Learn More!</a> </div>
+               <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" style="background-color: firebrick;" class="waves-effect waves-light btn"><b>Learn More!</b></a> </div>
         </div>
         </div>
         </section>
@@ -147,25 +155,38 @@ $(document).ready(function(){
           <section id="JS">  
         <div style="background-color: margin-top: 25px;">
 
-          <h2 class="center"><u>Javascript Fundamentals</u></h2>
+            <h2 class="center"><u><b>Javascript Fundamentals</b></u></h2>
         
         <div class="center" style="overflow: hidden;"> 
             
            <!--Poster-->
-             <div style="margin: 20px;"> <img style="float: left;" class="responsive-img"  src="Assets/placeholderyellow.png"/> </div>  
+             <div style="margin: 20px;"> <img style="float: left;" class="responsive-img"  src="Assets/poster3.jpg"/> </div>  
             
             <!--Text-->
-           <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcutibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eu dolor non turpis consectetur accumsan. Morbi urna enim, posuere eu nisi ultricies, tempor volutpat nunc. Phasellus sit amet velit arcu
+           <div> <p style="vertical-align: top;  font-size: 22px;"> <br> <br> <br> As well as the functions presented in the poster, Javascript can also make use of the following feautres:
+               <br>
+               <br>
+               <b> FOR Loop:</b>This is code that will loop until a condition is met. For example looping until A is less than 10.
+               <br>
+               <b>While Loop:</b>A while loop will repeat code as long as the predefined condtion is met. When the condition stops being met, the rest of the code will execute. You can also break the while loop through the use of a break statment.
+               <br>
+               <b>Do/While Loop:</b>This is similar to a while loop. A do/while loop will carry out the code once, then it will check to see if the condition is still true. Assuming the condition is true, the process will repeat until the condition is no longer met.
+               <br>
+               <b>Object Orientation:</b>Object orientation is where objects are created from a class that contain the key components of that object. This could be a button for example. This allows for you to make multiple instances of the object throughout the program instead remaking it each time.
+               <br>
+               <b>Event Handling:</b>When you move your mouse, click on a button or hover over a link,javascript can be programmed to carry out certain code for when these events occur. This is known as event handling. An example could be, you move your mouse over an image and then an animation plays.
+               <br>
+               <b>Javascript Function:</b>A Javascript function is code contained inside brackets with a keyword and function name. This allows the function to be called upon/used by the rest of the code. For example, a button could call a function that displays a messagebox.
             </p>
             <!--Button/Link-->
-               <a href="https://www.w3schools.com/js/" target="_blank" style="background-color: firebrick;" class="waves-effect waves-light btn">Learn More!</a> </div></div>
+               <a href="https://www.w3schools.com/js/" target="_blank" style="background-color: firebrick;" class="waves-effect waves-light btn"><b>Learn More!</b></a> </div></div>
         </div>
         </section>
         <hr>
         
         <!--Comparison-->
-       <section id="pc"> <h2 class="center" ><u> CSS Implementation Methods Comparison</u></h2>
-        <p class="center" style="font-size: 16px;">Below, I will lay out the pros and cons of each <br> implementation method as well as <br> when each one should be used</p>
+            <section id="pc"> <h2 class="center" ><u> <b> CSS Implementation Methods Comparison</b></u></h2>
+        <p class="center" style="font-size: 20px;">Below, I will lay out the pros and cons of each <br> implementation method as well as <br> when each one should be used</p>
         <div style="margin-left: 20px; font-size: 20px;">
             
         <p><b>Inline Advantages:</b> 
@@ -208,7 +229,7 @@ $(document).ready(function(){
         <hr>
         
         <!-- Browser Support-->
-    <section id="Browser">  <h2 class="center" ><u>Browser Support and Accessiblity</u></h2>
+            <section id="Browser">  <h2 class="center" ><u><b>Browser Support and Accessiblity</b></u></h2>
         <br>
        <div style="width: 100%; text-align: center;">
     <img class="responsive-img"  src="Assets/test.png"/>
@@ -216,7 +237,7 @@ $(document).ready(function(){
 </div>
     <div style="margin-left: 20px; font-size: 22px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed congue eros, at interdum magna. Quisque tempus, massa ut scelerisque facilisis, ipsum ante auctor nulla, at semper odio lectus iaculis tortor. Ut sollicitudin tempus felis efficitur varius. Vestibulum ante ipsum primis in faucibus orci
         </p></div>
-        <div class="center"> <a href="https://www.w3schools.com/cssref/css3_browsersupport.asp" target="_blank" style="background-color: firebrick;"  class="waves-effect waves-light btn">Learn More!</a> </div>
+        <div class="center"> <a href="https://www.w3schools.com/cssref/css3_browsersupport.asp" target="_blank" style="background-color: firebrick;"  class="waves-effect waves-light btn"><b>Learn More!</b></a> </div>
         <br>
         <br>
         <br>
@@ -230,8 +251,18 @@ $(document).ready(function(){
            <footer  class="logoblue" style=" width: 100%;
             bottom: 0;
             position: fixed;
-            height: 4.5% ">
-               <div style="margin-left: 20px;"> s </div>
+            height: 5% ">
+               
+               <div style="margin-left: 5px;  color: white"> 
+                   <p style="float: right; text-align: right; font-size: 15px;"><b><i>Site Built By Curtis Lockley</i></b></p>
+                 <div style="white-space: nowrap;" class="responsive-img" > 
+                     <img src="Assets/if_43-twitter_104461.png"/>
+                   <img src="Assets/if_43-twitter_104461.png" style="margin-left: 4px;"/ >
+                     <img src="Assets/if_43-twitter_104461.png" style="margin-left: 4px; "/>
+                   </div>
+                 
+               
+               </div>
         </footer>
         <!-- Footer End -->
     </body>

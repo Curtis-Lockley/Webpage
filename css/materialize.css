@@ -9429,6 +9429,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     
 }
 
+.osc
+{
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
